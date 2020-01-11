@@ -2,8 +2,8 @@ import React from "react";
 import Gamebox from "./Gamebox";
 
 function App() {
-  const rows = 10 || +prompt("enter the rows");
-  const columns = 10 || +prompt("enter the columns");
+  const rows = +prompt("enter the rows");
+  const columns = +prompt("enter the columns");
   const gameMatrix = new Array(rows)
     .fill(0)
     .map(() => new Array(columns).fill(0));
